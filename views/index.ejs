@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Lab#06 Task#02</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loginForm">
+            <h1>BMI Calculator</h1><br>
+            <form action="/bmi" method="GET">
+                <label for="Weight">Weigth (kg):</label>
+                <input type="text" name="Weight" id="Weight"><br><br>
+        
+                <label for="Height">Heigth (m):</label>
+                <input type="text" name="Height" id="Height"><br>
+                <br>
+                <input type="submit" value="Calculator BMI" id="button">
+            </form>
+
+            <br><br>
+            <p>Your BMI is  --> <%= bmiEJS %></p>
+            <p>Your BMI Type is --> <%= bmiTypeEJS %></p>
+        </div>
+    </div>
+</body>
+</html>
